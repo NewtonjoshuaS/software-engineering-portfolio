@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEWTON JOSHUA | Software Engineer</title>
+  <meta name="description" content="High-impact Software Engineering portfolio showcasing strong fundamentals, modern UI interactions, and a clear Laravel + React roadmap." />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          animation: {
+            float: 'float 6s ease-in-out infinite',
+            glow: 'glow 2s ease-in-out infinite',
+            fadeUp: 'fadeUp 1s ease-out forwards'
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-12px)' }
+            },
+            glow: {
+              '0%, 100%': { boxShadow: '0 0 15px #6366f1' },
+              '50%': { boxShadow: '0 0 30px #6366f1' }
+            },
+            fadeUp: {
+              '0%': { opacity: 0, transform: 'translateY(40px)' },
+              '100%': { opacity: 1, transform: 'translateY(0)' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-gradient-to-br from-gray-950 via-gray-900 to-black text-gray-100 overflow-x-hidden">
+
+<!-- NAVBAR -->
+<nav class="fixed w-full z-50 bg-black/40 backdrop-blur border-b border-white/10">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-indigo-400">NEWTON JOSHUA</h1>
+    <div class="space-x-6 text-sm font-medium">
+      <a href="#projects" class="hover:text-indigo-400 transition">Projects</a>
+      <a href="#skills" class="hover:text-indigo-400 transition">Skills</a>
+      <a href="#roadmap" class="hover:text-indigo-400 transition">Roadmap</a>
+      <a href="#contact" class="hover:text-indigo-400 transition">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="min-h-screen flex items-center justify-center relative pt-20">
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_#6366f1,_transparent_40%)]"></div>
+
+  <div class="relative max-w-4xl mx-auto text-center px-6 animate-fadeUp">
+    <h2 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
+      Software Engineer<br />
+      <span class="text-indigo-400">Web & Mobile</span>
+    </h2>
+    <p class="text-lg text-gray-300 mb-10">
+      I engineer reliable systems using PHP, JavaScript, and modern CSS, and build native mobile apps with Kotlin and Swift.
+      <br class="hidden md:block" />
+      <span class="text-indigo-400 font-semibold">Actively transitioning to Laravel & React.</span>
+    </p>
+    <div class="flex justify-center gap-6">
+      <a href="#projects" class="px-8 py-4 rounded-xl bg-indigo-600 hover:bg-indigo-500 transition animate-glow">View Projects</a>
+      <a href="https://github.com/NewtonjoshuaS" target="_blank" class="px-8 py-4 rounded-xl border border-indigo-400 hover:bg-indigo-400/10 transition">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-4xl font-bold mb-16 text-center">Technical Arsenal</h3>
+
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-indigo-400 transition animate-float">
+        <h4 class="text-xl font-semibold mb-4 text-indigo-400">Core Web</h4>
+        <ul class="space-y-2">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript (ES6+)</li>
+          <li>Tailwind CSS</li>
+          <li>PHP (Procedural)</li>
+        </ul>
+      </div>
+
+      <div class="p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-indigo-400 transition animate-float">
+        <h4 class="text-xl font-semibold mb-4 text-indigo-400">Programming</h4>
+        <ul class="space-y-2">
+          <li>Python</li>
+          <li>TypeScript (Beginner)</li>
+        </ul>
+      </div>
+
+      <div class="p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-indigo-400 transition animate-float">
+        <h4 class="text-xl font-semibold mb-4 text-indigo-400">Mobile & Growth</h4>
+        <ul class="space-y-2">
+          <li>Kotlin (Android)</li>
+          <li>Swift (iOS)</li>
+          <li>Laravel (Learning)</li>
+          <li>React (Learning)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-24 bg-gradient-to-b from-black to-gray-900">
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-4xl font-bold mb-16 text-center">Featured Projects</h3>
+
+    <div class="grid md:grid-cols-2 gap-10">
+      <div class="group p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-indigo-400 transition">
+        <h4 class="text-2xl font-semibold mb-3 group-hover:text-indigo-400">Student Management System</h4>
+        <p class="text-gray-300 mb-4">Robust PHP system with CRUD operations, validation, and clean procedural architecture.</p>
+        <p class="text-sm mb-4">PHP • MySQL • JavaScript • Tailwind</p>
+        <a href="#" class="text-indigo-400">GitHub →</a>
+      </div>
+
+      <div class="group p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-indigo-400 transition">
+        <h4 class="text-2xl font-semibold mb-3 group-hover:text-indigo-400">Weather Web App</h4>
+        <p class="text-gray-300 mb-4">Interactive frontend consuming real-time APIs with responsive UI.</p>
+        <p class="text-sm mb-4">JavaScript • HTML • Tailwind</p>
+        <a href="#" class="text-indigo-400">Live Demo →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section id="roadmap" class="py-24">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <h3 class="text-4xl font-bold mb-6">Framework Roadmap</h3>
+    <p class="text-gray-300 text-lg">
+      Strong fundamentals first. I am upgrading my backend from procedural PHP to Laravel and advancing my frontend from vanilla JavaScript to React — ensuring scalability without sacrificing engineering discipline.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-24 bg-black">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <h3 class="text-4xl font-bold mb-8">Let’s Build Something Serious</h3>
+    <p class="mb-4">Email: newtonjoshuasinda2000@gmail.com</p>
+    <p class="mb-4">Contact: 0674941820 (whatsaap & Normal)</p>
+    <p>GitHub: <a href="https://github.com/NewtonjoshuaS" class="text-indigo-400">github.com/NewtonjoshuaS</a></p>
+  </div>
+</section>
+
+<footer class="text-center py-6 text-gray-500 text-sm">© 2026 Newton Joshua —My Software Engineering Portfolio</footer>
+
+</body>
+</html>
